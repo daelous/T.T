@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="dale.drawerlayout.MainActivity"
+    tools:showIn="@layout/main_container">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/mainSearchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:focusable="false"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search" />
+
+    <LinearLayout
+        android:id="@+id/termContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainSearchview"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/mainAreaSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/arrayArea"
+            android:prompt="@string/spinArea" />
+
+        <Spinner
+            android:id="@+id/mainOrderSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/arrayOrder"
+            android:prompt="@string/spinOrder" />
+
+        <Spinner
+            android:id="@+id/mainStateSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/arrayState"
+
+            android:prompt="@string/spinState" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/workList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/termContainer" />
+
+
+</RelativeLayout>

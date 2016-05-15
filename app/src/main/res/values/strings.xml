@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">DrawerLayout</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="menu_alarm">Alarm</string>
+    <string name="menu_chat">Chatting</string>
+
+    <string name="spinArea">지역</string>
+    <string name="spinOrder">정렬</string>
+    <string name="spinState">상태</string>
+
+    <string-array name="arrayArea">
+        <item>시,구,군(동)1</item>
+        <item>시,구,군(동)2</item>
+        <item>시,구,군(동)3</item>
+        <item>시,구,군(동)4</item>
+    </string-array>
+    <string-array name="arrayOrder">
+        <item>최신순</item>
+        <item>가격순</item>
+        <item>마감일순</item>
+    </string-array>
+    <string-array name="arrayState">
+        <item>진행 중</item>
+        <item>완료</item>
+    </string-array>
+</resources>
